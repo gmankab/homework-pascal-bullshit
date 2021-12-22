@@ -24,16 +24,20 @@ end;
 procedure find_prime(N:integer);
 var i:Integer;
 begin
-  for i := 1 to N do
+  for i := 2 to N do
   begin
     actions_count := actions_count + 1;
     if is_prime(i) then
-      writeLn(i, ' is prime');
+    begin
+      actions_count := actions_count + 1;
+      prime_count := prime_count + 1;
+    end;
   end;
 end;
 
 
 begin
   find_prime(10000);
+  WriteLn('prime numbers count is ', prime_count);
   WriteLn('actions count is ', actions_count);
 end.
