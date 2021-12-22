@@ -1,16 +1,12 @@
-program prime_numbers;
-var actions_count:LongInt;
+program prime_numbers_brute_force;
+var
+  actions_count:LongInt;
+  prime_count:Integer;
 
 function is_prime(num:integer):Boolean;
-var i:Integer;
+var
+  i:Integer;
 begin
-  actions_count := actions_count + 1;
-  if num = 1 then
-  begin
-    is_prime := False;
-    actions_count := actions_count + 1;
-    exit;
-  end;
   for i := 2 to num - 1 do
   begin
       actions_count := actions_count + 1;
