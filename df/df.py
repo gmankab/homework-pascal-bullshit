@@ -37,7 +37,7 @@ print(
             Средний балл по физике: {aver('phys')}
             Средний балл по истории: {aver('history')}
         '''
-    )
+    ), '\n'
 )
 
 
@@ -50,7 +50,7 @@ print(
         Задание б:
             Максимальная сумма баллов: {maximal}
         '''
-    )
+    ), '\n'
 )
 
 df_max = df.loc[df['sum'] == maximal].copy()
@@ -63,7 +63,7 @@ print(
             Имена набравших максимальный балл в алфавитном порядке:
             {', '.join(sorted(df_max['fullnm'].to_list()))}.
         '''
-    )
+    ), '\n'
 )
 
 df = df[['alg', 'rus', 'phys', 'history']]
