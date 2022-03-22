@@ -1,7 +1,7 @@
 import pygame as pg
 
-def aa_rect(surface,rect,color,radius=1):
 
+def aa_rect(surface,rect,color,radius=1):
     """
     AAfilledRoundedRect(surface,rect,color,radius=0.4)
 
