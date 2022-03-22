@@ -1,0 +1,16 @@
+class TImp(TLog2In):
+    def __init__(self):
+        TLog2In.__init__(self)
+    def calc(self):
+        self._res = not (self.Inl) or self.In2
+
+
+elImp = Timp()
+print ('A | B | A => B ')
+print ('-' * 10)
+
+for A in range (2):
+    elImp.In1 = bool(A)
+    for B in range(2):
+        elImp.In2=bool(B)
+        print (f' {A} | {B} | {int(elImp.Res)}')
